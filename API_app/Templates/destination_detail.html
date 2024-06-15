@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ destination.name }}</title>
+</head>
+<body>
+    <h1>{{ destination.name }}</h1>
+    <p><strong>state:</strong> {{ destination.state }}</p>
+    <p><strong>district:</strong>{{ destination.district }}</p>
+    
+    
+    <p><strong>description:</strong> {{ destination.description }}</p>
+    <a href="{% url 'destination_update' destination.pk %}">Edit</a>
+    <a href="{% url 'destination_delete' destination.pk %}">Delete</a>
+</body>
+</html>
+
